@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Build
+dist/
+
+# Env variables
+.env
+
+# Logs
+*.log
+
+# Cache
+.nyc_output/
+coverage/
+.cache/
+tmp/
+
+# Mac/Linux
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
