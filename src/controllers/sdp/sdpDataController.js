@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
-const tokenCache = require('../utils/tokenCache');
-const { logTokenUsage } = require('../utils/logger');
+const tokenCache = require('../../utils/tokenCache');
+const { logTokenUsage } = require('../../utils/logger');
 
 async function getRequests(req, res) {
 

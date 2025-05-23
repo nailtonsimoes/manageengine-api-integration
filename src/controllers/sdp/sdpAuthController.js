@@ -1,5 +1,5 @@
-const { generateAccessToken } = require('../services/sdpService');
-const tokenCache = require('../utils/tokenCache');
+const { generateAccessToken } = require('../../services/sdpService');
+const tokenCache = require('../../utils/tokenCache');
 
 async function generateToken(req, res) {
   try {

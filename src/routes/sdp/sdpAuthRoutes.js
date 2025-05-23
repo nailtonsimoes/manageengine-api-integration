@@ -1,5 +1,5 @@
 const express = require('express');
-const { generateToken } = require('../controllers/sdpAuthController');
+const { generateToken } = require('../../controllers/sdp/sdpAuthController');
 
 const router = express.Router();
 

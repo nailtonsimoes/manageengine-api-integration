@@ -1,4 +1,4 @@
-const { generateAnalyticsAuthToken } = require('../services/analyticsService');
+const { generateAnalyticsAuthToken } = require('../../services/analyticsService');
 
 async function generateAuthToken(req, res) {
   const { email, password } = req.body;
