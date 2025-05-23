@@ -1,0 +1,68 @@
+# ManageEngine API Integration
+
+Este projeto realiza integrações automatizadas com o ManageEngine Analytics Plus e ServiceDesk Plus, incluindo automação de login e navegação via RPA com Playwright.
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior recomendada)
+- [npm](https://www.npmjs.com/)
+- [Playwright](https://playwright.dev/)
+
+## Instalação
+
+1. **Clone o repositório:**
+   ```sh
+   git clone https://github.com/seu-usuario/manageengine-api-integration.git
+   cd manageengine-api-integration
+   ```
+
+2. **Instale as dependências:**
+   ```sh
+   npm install
+   ```
+
+3. **Instale os navegadores do Playwright:**
+   ```sh
+   npx playwright install
+   ```
+
+## Como rodar o backend
+
+```sh
+npm start
+```
+O servidor irá rodar em `http://localhost:3000/`.
+
+## Como rodar o script de RPA
+
+1. Edite o arquivo `rpa.js` e coloque seu e-mail e senha válidos:
+   ```js
+   const email = 'seu@email.com';
+   const password = 'suasenha';
+   ```
+
+2. Execute o script:
+   ```sh
+   node rpa.js
+   ```
+
+O script irá automatizar o login e navegação no Analytics Plus usando o Playwright.
+
+## Estrutura do Projeto
+
+```
+src/
+  controllers/
+  routes/
+  services/
+rpa.js
+```
+
+## Observações
+
+- Nunca exponha suas credenciais em arquivos públicos.
+- O uso de automação pode ser bloqueado por captchas ou mudanças na interface do Analytics Plus.
+
+## Licença
+
+MIT
